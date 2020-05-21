@@ -1,0 +1,44 @@
+body {
+    background: $light-gray;
+    padding: 2vh 10vw;
+    p {
+        color: $gray-blue;
+        font-size: 15px;
+    }
+}
+
+main {
+    padding-top: 5vh;
+    margin-bottom: 10vh;
+    .card {
+        padding: 2.0rem;
+        height: 300px;
+        border-radius: 7px;
+        border: 0;
+        box-shadow: -6px -6px 9px $light-gray, 0px 6px 19px rgba($gray-blue, 0.3);
+        h4 {
+            color: $dark-blue;
+            font-weight: 600;
+        }
+    }
+}
+
+.mar-center {
+    margin: 12% 0;
+}
+
+.red {
+    border-top: 5px solid $primary-color !important;
+}
+
+.cyan {
+    border-top: 5px solid $cyan !important;
+}
+
+.orange {
+    border-top: 5px solid $orange !important;
+}
+
+.blue {
+    border-top: 5px solid $blue !important;
+}

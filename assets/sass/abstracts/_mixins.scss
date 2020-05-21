@@ -1,0 +1,11 @@
+// Sass mixin
+$font-weights: (200, 400, 600);
+@each $weight in $font-weights {
+    .f-#{$weight} {
+        font-weight: #{$weight};
+    }
+}
+
+@mixin font-size {
+    font-size: 15px;
+}
