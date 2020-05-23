@@ -1,6 +1,11 @@
 // Header
 header {
-    padding: 3vh 10vw;
+    // padding: 3vh 10vw;
+    // padding-left: 7vw;
+    // padding-right: 8vw;
+    // padding-top: 3vh;
+    // padding-bottom: 3vh;
+    padding: 3vh 8vw 0 7vw;
     height: 10vh // width: 100%;
     // position: absolute;
     // img {
@@ -24,8 +29,8 @@ header {
     @include transition-ease;
     &__burger {
         position: absolute;
-        right: 1.5rem;
-        top: 1.9rem;
+        right: 1.9rem;
+        top: 2.6rem;
         width: 28px;
         height: 3px;
         background: #000;
@@ -43,7 +48,7 @@ header {
             content: '';
             position: absolute;
             top: 8px;
-            width: 20px;
+            width: 28px;
             height: 3px;
             background: #000;
             @include transition-ease;
@@ -96,6 +101,7 @@ nav {
             transform: translateX(100vw);
             @include transition-ease;
             a {
+                padding-top: 1vh;
                 // color: $dark-blue;
                 color: $gray-blue;
                 // font-size: 18px !important;
@@ -105,6 +111,7 @@ nav {
                 transform: translate(0);
             }
             &.active>a {
+                padding-bottom: 1.2rem;
                 border-bottom: 3px solid $bright-cyan;
             }
         }

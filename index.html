@@ -26,7 +26,7 @@
                     <ul class="menu-nav">
                         <li class="menu-nav__item active"><a href="#!" class="menu-nav__link">Home</a></li>
                         <li class="menu-nav__item"><a href="#!" class="menu-nav__link">About</a></li>
-                        <li class="menu-nav__item"><a href="#!" class="menu-nav__link">Contact</a></li>
+                        <li class="menu-nav__item"><a href="#footer" class="menu-nav__link">Contact</a></li>
                         <li class="menu-nav__item"><a href="#!" class="menu-nav__link">Blog</a></li>
                         <li class="menu-nav__item"><a href="#!" class="menu-nav__link">Careers</a></li>
                     </ul>
@@ -43,66 +43,89 @@
         </div>
     </header>
     <main>
-        <div class="row expanded">
-            <div class="medium-6 small-12">
-                <h2>why choose easyBank?</h2>
-                <p>We leverage Open Banking to turn your bank account into your financial hub. Control your finances like never before.</p>
-            </div>
-        </div>
-        <div class="row expanded">
-            <div class="columns medium-3 small-12">
-                <div class="card">
-                    <div class="card-section">
-                        <img src="./assets/images/icon-online.svg" alt="">
-
+        <section class="home">
+            <div class="row expanded">
+                <div class="columns medium-2 small-12 home-left">
+                    <h2>Next generation digital banking</h2>
+                    <p>Take your financial life online. Your Easybank account will be a one-stop-shop for spending, saving, budgeting, investing, and much more.</p>
+                    <div class="primary-button">
+                        <a href="#">Request Invite</a>
                     </div>
-                    <div class="card-section">
-                        <span></span>
-                        <p></p>
+                </div>
+                <div class="columns medium-7 medium-offset-2 small-12">
+                    <div class="home-right"><img src="./assets/images/image-mockups.png" alt="" class="intro-img">
                     </div>
                 </div>
             </div>
-            <div class="columns medium-3 small-12">
-                <div class="card">
-                    <div class="card-section">
-                        <img src="./assets/images/icon-budgeting.svg" alt="">
+        </section>
 
+        <section class="blog">
+            <div class="row expanded">
+
+                <div class="columns medium-4 small-12 blog-intro">
+                    <h3>Why choose Easybank?</h3>
+                    <p>We leverage Open Banking to turn your bank account into your financial hub. Control your finances like never before.</p>
+                </div>
+            </div>
+            <div class="row expanded">
+                <div class="columns medium-3 small-12">
+                    <div class="card">
+                        <div class="card-section">
+                            <img src="./assets/images/icon-online.svg" alt="">
+
+                        </div>
+                        <div class="card-section">
+                            <span>Online Banking</span>
+                            <p>Our modern web and mobile applications allow you to keep track of your finances wherever you are in the world.</p>
+                        </div>
                     </div>
-                    <div class="card-section">
-                        <span></span>
-                        <p></p>
+                </div>
+                <div class="columns medium-3 small-12">
+                    <div class="card">
+                        <div class="card-section">
+                            <img src="./assets/images/icon-budgeting.svg" alt="">
+
+                        </div>
+                        <div class="card-section">
+                            <span>Simple Budgeting</span>
+                            <p>See exactly where your money goes each month. Receive notifications when you’re close to hitting your limits.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="columns medium-3 small-12">
+                    <div class="card">
+                        <div class="card-section">
+                            <img src="./assets/images/icon-onboarding.svg" alt="">
+                        </div>
+                        <div class="card-section">
+                            <span>Fast Onboarding</span>
+                            <p>We don’t do branches. Open your account in minutes online and start taking control of your finances right away.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="columns medium-3 small-12">
+                    <div class="card">
+                        <div class="card-section">
+                            <img src="./assets/images/icon-api.svg" alt="">
+
+                        </div>
+                        <div class="card-section">
+                            <span>Open API</span>
+                            <p>Manage your savings, investments, pension, and much more from one account. Tracking your money has never been easier.</p>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="columns medium-3 small-12">
-                <div class="card">
-                    <div class="card-section">
-                        <img src="./assets/images/icon-onboarding.svg" alt="">
-                    </div>
-
-                    <div class="card-section">
-                        <span></span>
-                        <p></p>
-                    </div>
-                </div>
-            </div>
-            <div class="columns medium-3 small-12">
-                <div class="card">
-                    <div class="card-section">
-                        <img src="./assets/images/icon-api.svg" alt="">
-
-                    </div>
-                    <div class="card-section">
-                        <span></span>
-                        <p></p>
-                    </div>
-                </div>
-            </div>
-        </div>
+        </section>
     </main>
 
     <article>
+        <div class="row expanded">
 
+            <div class="columns medium-4 small-12">
+                <h3>Latest Articles</h3>
+            </div>
+        </div>
         <div class="row expanded">
 
             <div class="columns medium-3 small-12">
@@ -151,7 +174,7 @@
 
 
 
-    <footer class="text-center">
+    <footer id="footer" class="text-center">
         <div class="row expanded">
             <div class="columns medium-3 small-12">
                 <img src="./assets//images/logo.svg" alt="Logo Image">
@@ -180,11 +203,21 @@
                     <li>privacy policy</li>
                 </ul>
             </div>
-            <div class="columns medium-5 small-12">
-                <Button type="button">Request invite</Button>
+            <div class="columns medium-3 medium-offset-2 small-12">
+                <ul>
+                    <li>
+                        <div class="primary-button">
+                            <a href="#">Request Invite</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div>&copy; Easybank. All Rights Reserved</div>
+                    </li>
+                </ul>
+
             </div>
         </div>
-        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="#">Your Name Here</a>.
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="#">Tony Ouma</a>.
     </footer>
 
     <script src="./assets/js/app.js"></script>
