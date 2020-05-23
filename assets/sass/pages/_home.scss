@@ -1,6 +1,7 @@
 body {
     // @include font18;
     // color: $secondary-light-gray !important;
+    color: #F3F4F6;
 }
 
 main {
@@ -16,16 +17,42 @@ article {
         border-radius: 7px;
         border: none;
         height: 450px;
+        h6 {
+            padding: 1vh 0;
+            // @include font18;
+            font-size: 15px;
+            color: $gray-blue;
+        }
         img {
             height: 25vh;
         }
         span {
-            font-size: 1.6rem;
-            line-height: 1.1;
+            // margin: 50vh 0 !important;
+            font-size: 24px;
+            color: $dark-blue;
+            line-height: 0.9;
             &:hover {
-                color: $cyan;
+                color: #31d35c;
+                // color: $cyan;
                 opacity: 1;
             }
         }
+        p {
+            padding-top: 1vh;
+            font-size: 14px;
+            color: $gray-blue;
+            line-height: 1.5;
+        }
+    }
+}
+
+.primary-button {
+    display: inline-block;
+    padding: .5rem 1.5rem;
+    border-radius: 50px;
+    background: linear-gradient(225deg, $bright-cyan, $lime-green);
+    font-weight: 500;
+    a {
+        color: $white;
     }
 }

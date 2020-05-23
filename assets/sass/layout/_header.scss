@@ -1,19 +1,26 @@
 // Header
 header {
     padding: 3vh 10vw;
-    // width: 100%;
+    height: 10vh // width: 100%;
     // position: absolute;
+    // img {
+    //     padding-top: 1rem;
+    // }
+}
+
+.img-logo {
+    padding-top: .7rem;
 }
 
 .menu-btn {
     // position: absolute;
     // width: 100%;
-    z-index: 1;
-    padding: 1rem;
-    top: 2rem;
-    height: 20px;
-    width: 28px;
-    cursor: pointer;
+    // z-index: 1;
+    // padding: 1rem;
+    // top: 2rem;
+    // height: 20px;
+    // width: 28px;
+    // cursor: pointer;
     @include transition-ease;
     &__burger {
         position: absolute;
@@ -89,7 +96,10 @@ nav {
             transform: translateX(100vw);
             @include transition-ease;
             a {
-                color: $dark-blue;
+                // color: $dark-blue;
+                color: $gray-blue;
+                // font-size: 18px !important;
+                @include font18;
             }
             &.open {
                 transform: translate(0);
