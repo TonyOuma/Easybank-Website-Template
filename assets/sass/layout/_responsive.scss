@@ -1,50 +1,26 @@
-// media-queries
-// small only
-@mixin small-only {
-    @media screen and (max-width: 39.9375em) {
-        @content;
+@include media-sm {
+    .menu-btn {
+        visibility: hidden;
+        // width: 80% !important;
+        // &__burger {
+        //     top: 1.9rem !important;
+        // }
     }
-}
-
-// Medium and up
-@mixin medium-up {
-    @media screen and (min-width: 40em) {
-        @content;
-    }
-}
-
-// Medium only
-@mixin medium-only {
-    @media screen and (min-width: 40em) and (max-width: 63.9375em) {
-        @content;
-    }
-}
-
-// Large and up
-@mixin medium-up {
-    @media screen and (min-width: 64em) {
-        @content;
-    }
-}
-
-// Large only
-@mixin medium-up {
-    @media screen and (min-width: 64em) and (max-width: 74.9375em) {
-        @content;
-    }
-}
-
-@include small-only {
-    body {
-        padding: 2vh 4vw !important;
-    }
-    .mar-center {
-        margin: 0 0 !important;
-    }
-    main {
-        padding-top: 2vh !important;
-        .card {
-            padding: 2.0rem !important;
+    .nav {
+        visibility: visible;
+        .menu-nav {
+            display: block;
+            transform: translateY(0);
+            height: 100%;
+            background: transparent;
+            text-align: center;
+            &__item {
+                display: inline;
+                padding-right: 1.5rem;
+            }
+            &__link {
+                font-size: 1.5rem;
+            }
         }
     }
 }
