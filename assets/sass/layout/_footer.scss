@@ -2,19 +2,18 @@ footer {
     background: $dark-blue;
     color: $white;
     padding: 4vh 7vw;
-    img {
-        float: left;
-        color: $white;
-    }
     ul {
         list-style: none;
+        .primary-button {
+            margin-bottom: 2vh;
+        }
         li:hover {
             color: $lime-green;
             cursor: pointer;
         }
     }
     .menu {
-        padding-top: 4vh;
+        padding-top: 3vh;
         li {
             margin-right: 6px;
             &:hover {
