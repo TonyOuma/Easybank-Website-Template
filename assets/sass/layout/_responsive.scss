@@ -30,7 +30,7 @@
         background: $secondary-light-gray;
         // overflow: visible;
         margin-right: 0vw !important;
-        padding-left: 7vw;
+        padding-left: 0vw !important;
         z-index: 20;
         padding-top: 20vh !important;
         p {
@@ -38,13 +38,17 @@
             color: $gray-blue;
         }
         &-left {
-            // align-items: center;
-            padding: 0vh 0 !important;
-            margin-top: 55vh;
+            h2 {
+                font-size: 40px;
+                font-weight: 400;
+            }
+            text-align: center;
+            padding: 0vh 3vw !important;
+            margin-top: 50vh;
         }
         &-right {
-            margin-top: -85vh !important;
-            // background: url("../../images/bg-intro-desktop.svg") !important;
+            margin-top: -92vh !important;
+            background: url("../../images/bg-intro-desktop.svg") !important;
         }
     }
     .blog {
@@ -52,6 +56,18 @@
         // padding: 0 0 10vh 0 !important;
         padding-left: 0 !important;
         padding-right: 0 !important;
+        &-intro {
+            padding: 3rem 0 0 0 !important;
+            text-align: center;
+        }
+        .card {
+            img {
+                padding: 0 32vw;
+            }
+            .card-section {
+                text-align: center;
+            }
+        }
     }
     article {
         padding: 10vh 2vw !important;
