@@ -24,3 +24,36 @@
         }
     }
 }
+
+@include small-only {
+    .home {
+        background: $secondary-light-gray;
+        // overflow: visible;
+        margin-right: 0vw !important;
+        padding-left: 7vw;
+        z-index: 20;
+        padding-top: 20vh !important;
+        p {
+            font-size: 13.84px;
+            color: $gray-blue;
+        }
+        &-left {
+            // align-items: center;
+            padding: 0vh 0 !important;
+            margin-top: 55vh;
+        }
+        &-right {
+            margin-top: -85vh !important;
+            // background: url("../../images/bg-intro-desktop.svg") !important;
+        }
+    }
+    .blog {
+        margin-top: 0 !important;
+        // padding: 0 0 10vh 0 !important;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+    article {
+        padding: 10vh 2vw !important;
+    }
+}

@@ -15,7 +15,7 @@ main {
     overflow: hidden;
     margin-right: -60vw;
     padding-left: 7vw;
-    z-index: 20;
+    // z-index: 20;
     margin-top: -20vh;
     p {
         font-size: 13.84px;
@@ -27,15 +27,15 @@ main {
         h2 {
             line-height: 1.1;
         }
-        &-right {
-            background: url("../../images/bg-intro-desktop.svg") !important;
-        }
     }
-    // &-img{
-    //     padd
-    // }
+    &-right {
+        background-image: url("../../images/bg-intro-desktop.svg");
+    }
 }
 
+// &-img{
+//     padd
+// }
 .intro-img {}
 
 article {

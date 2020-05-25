@@ -1,8 +1,31 @@
 footer {
     background: $dark-blue;
-    padding: 4vh 5vw;
+    color: $white;
+    padding: 4vh 7vw;
     img {
         float: left;
         color: $white;
+    }
+    ul {
+        list-style: none;
+        li:hover {
+            color: $lime-green;
+            cursor: pointer;
+        }
+    }
+    .menu {
+        padding-top: 4vh;
+        li {
+            margin-right: 6px;
+            &:hover {
+                svg {
+                    path {
+                        fill: $lime-green;
+                        filter: brightness(1);
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
     }
 }
